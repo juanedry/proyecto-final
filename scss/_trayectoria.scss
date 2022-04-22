@@ -1,0 +1,58 @@
+.contenedor-titulo-trayectoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+    font-size: 36px;
+    font-family: 'Rajdhani';
+}
+
+.contenedor-trayectoria {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.evento {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0rem;
+
+    div {
+        width: 42%;
+        border: 10px solid #fff;
+        position: relative;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+}
+
+
+.evento-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 0rem;
+
+    div {
+        width: 42%;
+        border: 10px solid #fff;
+        position: relative;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+    }
+}
+
+.fechas{
+    font-size: 2rem;
+    font-family: 'Rajdhani';
+}

@@ -1,0 +1,17 @@
+.contenedor-titulo-goles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 35vh;
+    font-size: 36px;
+    font-family: "Rajdhani";
+}
+
+.contenedor-goles {
+    iframe {
+        width: 100%;
+        height: 60vh;
+        border: 10px solid #fff;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+}

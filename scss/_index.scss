@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.contenedor-menu-oculto {
+    top: 3%;
+    left: 3%;
+    width: 30%;
+    background: linear-gradient(to bottom,rgba(97,97,97,0.9) 45%,rgba(14,43,111,0) 100%);
+    
+}
+
+.img-logo-dm {
+    @include tamaño(100px, 60px);
+}
+
+.boton-menu {
+    font-size: 3rem;
+    background-color: transparent;
+    border-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-family: 'Rajdhani';
+    font-weight: 500;
+
+    &:hover {
+        @extend .boton-menu;
+    }
+
+    &:focus {
+        @extend .boton-menu;
+    }
+}
+
+.contenedor-portada-index {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://github.com/juanedry/directorio-imagenes/blob/main/portada-index.jpg?raw=true);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.contenedor-lista-menu {
+    ul {
+        li {
+            a {
+                font-size: 2.5rem;
+                color: black;
+                font-family: 'Rajdhani';
+                font-weight: 500;
+
+                &:hover {
+                    color: white;
+                    text-decoration: underline;
+
+                    &:focus {
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.logoInstagram {
+    padding: 1rem 1rem;
+}
+
+.logoFacebook {
+    padding: 1rem 1rem;
+}
+
+.contenedor-texto-una-leyenda {
+    position: relative;
+    top: 45vh;
+    left: 22.2vw;
+    width: 10%;
+
+    span {
+        color: map-get($estilos-compartidos, colorBlanco);
+        font-family: map-get($estilos-compartidos, fuenteSitio);
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 1.8rem;
+    }
+}
+
+.contenedor-texto-nunca-muere {
+    position: relative;
+    top: 45vh;
+    left: 22vw;
+
+        span {
+            color: map-get($estilos-compartidos, colorBlanco);
+            font-family: map-get($estilos-compartidos, fuenteSitio);
+            font-weight: 500;
+            font-size: 8rem;
+        }
+}

@@ -1,0 +1,220 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  position: absolute;
+  padding: 4rem;
+  align-items: center; }
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.contenedor-menu-oculto {
+  top: 3%;
+  left: 3%;
+  width: 30%;
+  background: linear-gradient(to bottom, rgba(97, 97, 97, 0.9) 45%, rgba(14, 43, 111, 0) 100%); }
+
+.img-logo-dm {
+  width: 100px;
+  height: 60px; }
+
+.boton-menu, .boton-menu:hover, .boton-menu:focus {
+  font-size: 3rem;
+  background-color: transparent;
+  border-color: transparent;
+  text-decoration: none;
+  color: black;
+  font-family: 'Rajdhani';
+  font-weight: 500; }
+
+.contenedor-portada-index {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://github.com/juanedry/directorio-imagenes/blob/main/portada-index.jpg?raw=true);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; }
+
+.contenedor-lista-menu ul li a {
+  font-size: 2.5rem;
+  color: black;
+  font-family: 'Rajdhani';
+  font-weight: 500; }
+  .contenedor-lista-menu ul li a:hover {
+    color: white;
+    text-decoration: underline; }
+    .contenedor-lista-menu ul li a:hover:focus {
+      color: white; }
+
+.logoInstagram {
+  padding: 1rem 1rem; }
+
+.logoFacebook {
+  padding: 1rem 1rem; }
+
+.contenedor-texto-una-leyenda {
+  position: relative;
+  top: 45vh;
+  left: 22.2vw;
+  width: 10%; }
+  .contenedor-texto-una-leyenda span {
+    color: black;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 1.8rem; }
+
+.contenedor-texto-nunca-muere {
+  position: relative;
+  top: 45vh;
+  left: 22vw; }
+  .contenedor-texto-nunca-muere span {
+    color: black;
+    font-family: "Rajdhani";
+    font-weight: 500;
+    font-size: 8rem; }
+
+.contenedor-titulo-trayectoria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  font-size: 36px;
+  font-family: 'Rajdhani'; }
+
+.contenedor-trayectoria {
+  width: 90%;
+  margin: 100px auto; }
+
+.evento {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0rem; }
+  .evento div {
+    width: 42%;
+    border: 10px solid #fff;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .evento div img {
+      width: 100%;
+      vertical-align: top; }
+
+.evento-row-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3rem 0rem; }
+  .evento-row-reverse div {
+    width: 42%;
+    border: 10px solid #fff;
+    position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .evento-row-reverse div img {
+      width: 100%;
+      vertical-align: top; }
+
+.fechas {
+  font-size: 2rem;
+  font-family: 'Rajdhani'; }
+
+.contenedor-titulo-goles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  font-size: 36px;
+  font-family: "Rajdhani"; }
+
+.contenedor-goles iframe {
+  width: 100%;
+  height: 60vh;
+  border: 10px solid #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+
+.contenedor-titulo-galeria {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  font-size: 36px;
+  font-family: 'Rajdhani'; }
+
+.contenedor-galeria div div {
+  display: flex;
+  overflow: hidden; }
+  .contenedor-galeria div div img {
+    width: 100%;
+    transition: all 2s; }
+    .contenedor-galeria div div img:hover {
+      transform: scale(1.1);
+      opacity: 0.6; }
+
+.contenedor-titulo-contacto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  font-size: 36px;
+  font-family: "Rajdhani"; }
+
+.form-contacto {
+  padding: 0% 30%; }
+
+.contenedor-titulo-biografia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 35vh;
+  font-size: 36px;
+  font-family: 'Rajdhani'; }
+
+.contenedor-biografia p {
+  font-size: 1.5rem; }
+
+@media screen and (max-width: 425px) {
+  .contenedor-texto-una-leyenda {
+    left: 5vw;
+    width: 50%; }
+  .contenedor-texto-nunca-muere {
+    left: 39.6vw; } }
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 3rem; }
+  .contenedor-menu-oculto {
+    width: 40%; }
+  .contenedor-texto-una-leyenda {
+    left: 6.3vw;
+    width: 30%; }
+    .contenedor-texto-una-leyenda span {
+      font-size: 2.4rem; }
+  .contenedor-texto-nunca-muere {
+    left: 6vw; }
+    .contenedor-texto-nunca-muere span {
+      font-size: 5rem; }
+  .contenedor-portada-index {
+    background-position-x: 40%; }
+  .contenedor-trayectoria {
+    margin: auto; }
+  .evento {
+    flex-direction: column; }
+    .evento div {
+      width: 100%;
+      margin: 10px auto; }
+  .evento-row-reverse {
+    flex-direction: column !important; }
+    .evento-row-reverse div {
+      width: 100%;
+      margin: 10px auto; } }
