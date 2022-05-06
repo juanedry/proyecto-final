@@ -27,57 +27,56 @@
     <!-- mis estilos -->
     <link rel="stylesheet" href="estilos/estilos.css">
 
+    <link href="dist/hamburgers.css" rel="stylesheet">
+
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
 <body>
-
-    <header>
-        <div class="contenedor-img-dm">
-            <img class="animate__animated animate__fadeInRight animate__delay-3s img-logo-dm"
+    <header class="p-3">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-start contenedor-menu-oculto" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body contenedor-lista-menu">
+                        <ul class="navbar-nav pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/goles.html">Goles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/biografia.html">Bio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./paginas/trayectoria.html">Trayectoria</a>
+                            </li>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class=" contenedor-img-dm">
+            <img class="animate__animated animate__fadeInLeftBig animate__delay-3s img-logo-dm"
                 src="./multimedia/iconosLogos/logo-dm.png" alt="logo dm">
         </div>
-        <div class="contenedor-boton-menu">
-            <a class="animate__animated animate__fadeInDown animate__delay-4s boton-menu" data-bs-toggle="offcanvas"
-                href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-                MENU
-            </a>
-        </div>
-
-        <div class="offcanvas offcanvas-start contenedor-menu-oculto" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header justify-content-end">
-                <button type="button" class="btn-close btn-close-white text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-
-            <div class="offcanvas-body contenedor-lista-menu">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html">INICIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/goles.html">GOLES</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/galeria.html">GALERIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/contacto.html">CONTACTO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/biografia.html">BIOGRAFIA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./paginas/trayectoria.html">TRAYECTORIA</a>
-                    </li>
-            </div>
-        </div>
-
     </header>
-
 
     <div class="contenedor-portada-index">
         <div class="animate__animated animate__fadeInUp animate__delay-2s contenedor-texto-una-leyenda">
@@ -86,16 +85,13 @@
         <div class="animate__animated animate__fadeInUp animate__delay-3s contenedor-texto-nunca-muere">
             <span class="">NUNCA MUERE</span>
         </div>
+        <div class="animate__animated animate__fadeInDownBig animate__delay-4s contenedor-logos-redes">
+            <a href="https://www.instagram.com/maradona/?hl=es"><img class="logoInstagram"
+                    src="./multimedia/iconosLogos/instagram.png" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/diegomaradona"><img class="logoFacebook"
+                    src="./multimedia/iconosLogos/facebook.png" alt="logo facebook"></a>
+        </div>
     </div>
-
-
-
-    <footer>
-        <a href="https://www.instagram.com/maradona/?hl=es"><img class="logoInstagram" src="./multimedia/iconosLogos/instagram.png"
-                alt="logo instagram"></a>
-        <a href="https://www.facebook.com/diegomaradona"><img class="logoFacebook" src="./multimedia/iconosLogos/facebook.png"
-                alt="logo facebook"></a>
-    </footer>
 
 
     <!-- bootstrap link -->
@@ -111,7 +107,6 @@
     <script>
         AOS.init();
     </script>
-
 </body>
 
 </html>

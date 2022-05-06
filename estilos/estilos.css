@@ -1,15 +1,14 @@
 header {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: space-between;
   position: absolute;
-  padding: 4rem;
-  align-items: center; }
+  width: 100%; }
 
 footer {
+  position: absolute;
   display: flex;
   justify-content: flex-end;
-  background-color: black; }
+  background-color: white; }
 
 * {
   margin: 0;
@@ -19,23 +18,11 @@ html {
   font-size: 62.5%; }
 
 .contenedor-menu-oculto {
-  top: 3%;
-  left: 3%;
-  width: 30%;
-  background: linear-gradient(to bottom, rgba(97, 97, 97, 0.9) 45%, rgba(14, 43, 111, 0) 100%); }
+  width: 30%; }
 
 .img-logo-dm {
   width: 100px;
   height: 60px; }
-
-.boton-menu, .boton-menu:hover, .boton-menu:focus {
-  font-size: 3rem;
-  background-color: transparent;
-  border-color: transparent;
-  text-decoration: none;
-  color: black;
-  font-family: 'Rajdhani';
-  font-weight: 500; }
 
 .contenedor-portada-index {
   width: 100%;
@@ -46,15 +33,18 @@ html {
   overflow: hidden; }
 
 .contenedor-lista-menu ul li a {
-  font-size: 2.5rem;
+  background-image: linear-gradient(transparent 0%, transparent 90%, black 90%, black 100%);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  background-position-x: right;
+  transition: background-size 300ms;
+  font-size: 1.8rem;
   color: black;
   font-family: 'Rajdhani';
   font-weight: 500; }
   .contenedor-lista-menu ul li a:hover {
-    color: white;
-    text-decoration: underline; }
-    .contenedor-lista-menu ul li a:hover:focus {
-      color: white; }
+    background-size: 100% 100%;
+    background-position-x: left; }
 
 .logoInstagram {
   padding: 1rem 1rem; }
@@ -83,6 +73,12 @@ html {
     font-family: "Rajdhani";
     font-weight: 500;
     font-size: 8rem; }
+
+.contenedor-logos-redes {
+  position: relative;
+  top: 55vh;
+  left: 95vw;
+  display: inline-grid; }
 
 .contenedor-titulo-trayectoria {
   display: flex;
@@ -183,6 +179,15 @@ html {
 .contenedor-biografia p {
   font-size: 1.5rem; }
 
+.contenedor-portada-paginas {
+  background-image: url(file:///C:/Users/reyjuan/Desktop/webMaradonaJuanRey/multimedia/imagenes-portadas/portada-paginas.jpg);
+  background-size: cover;
+  background-position-y: 150px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh; }
+
 @media screen and (max-width: 425px) {
   .contenedor-texto-una-leyenda {
     left: 5vw;
@@ -217,4 +222,7 @@ html {
     flex-direction: column !important; }
     .evento-row-reverse div {
       width: 100%;
-      margin: 10px auto; } }
+      margin: 10px auto; }
+  .contenedor-logos-redes {
+    top: 60vh;
+    left: 1vw; } }
