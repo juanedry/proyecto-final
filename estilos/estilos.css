@@ -76,7 +76,7 @@ html {
 
 .contenedor-logos-redes {
   position: relative;
-  top: 55vh;
+  top: 45vh;
   left: 95vw;
   display: inline-grid; }
 
@@ -133,11 +133,13 @@ html {
   font-size: 36px;
   font-family: "Rajdhani"; }
 
-.contenedor-goles iframe {
-  width: 100%;
-  height: 60vh;
-  border: 10px solid #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+.contenedor-goles {
+  padding: 50px 10px; }
+  .contenedor-goles iframe {
+    width: 100%;
+    height: 60vh;
+    border: 10px solid #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
 
 .contenedor-titulo-galeria {
   display: flex;
@@ -166,7 +168,7 @@ html {
   font-family: "Rajdhani"; }
 
 .form-contacto {
-  padding: 0% 30%; }
+  padding: 0% 30% 10%; }
 
 .contenedor-titulo-biografia {
   display: flex;
@@ -176,11 +178,15 @@ html {
   font-size: 36px;
   font-family: 'Rajdhani'; }
 
-.contenedor-biografia p {
-  font-size: 1.5rem; }
+.primer-parrafo, .segundo-parrafo, .tercer-parrafo, .cuarto-parrafo {
+  padding: 10px 20px;
+  text-align: justify; }
+  .primer-parrafo p, .segundo-parrafo p, .tercer-parrafo p, .cuarto-parrafo p {
+    font-size: 1.8rem;
+    font-family: 'Rajdhani'; }
 
 .contenedor-portada-paginas {
-  background-image: url(file:///C:/Users/reyjuan/Desktop/webMaradonaJuanRey/multimedia/imagenes-portadas/portada-paginas.jpg);
+  background-image: url(https://github.com/juanedry/directorio-imagenes/blob/main/portada-paginas.jpg?raw=true);
   background-size: cover;
   background-position-y: 150px;
   background-repeat: no-repeat;
@@ -211,6 +217,8 @@ html {
       font-size: 5rem; }
   .contenedor-portada-index {
     background-position-x: 40%; }
+  .contenedor-portada-paginas {
+    background-position-x: 50%; }
   .contenedor-trayectoria {
     margin: auto; }
   .evento {
